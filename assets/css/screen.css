@@ -566,6 +566,7 @@ margin on the iframe, cause it breaks stuff. */
 
 
 #circle1, #circle2 {
+
     -webkit-animation: blowup .8s infinite;
     -moz-animation: blowup .8s infinite;
     -o-animation: blowup .8s infinite;
@@ -615,19 +616,19 @@ margin on the iframe, cause it breaks stuff. */
 
 
 @-webkit-keyframes blowup {
-  0%, 100%   { -webkit-transform: translateX(0px); opacity: 1;}
+  0%  { -webkit-transform: translateX(0px) translateY(0px); opacity: 1;}
   100% { -webkit-transform: translateX(-30px) translateY(-30px) scale(1.5); opacity: 0; }
 }
 @-moz-keyframes blowup {
-  0%, 100%   { transform: translateX(0px); opacity: 1;}
+  0%  { transform: translateX(0px); opacity: 1;}
   100% { transform: translateX(-30px) translateY(-30px) scale(1.5); opacity: 0; }
 }
 @-o-keyframes blowup {
-  0%, 100%   { transform: translateX(0px); opacity: 1;}
+  0%   { transform: translateX(0px); opacity: 1;}
   100% { transform: translateX(-30px) translateY(-30px) scale(1.5); opacity: 0; }
 }
 @keyframes blowup {
-  0%, 100%   { transform: translateX(0px); opacity: 1;}
+  0%   { transform: translateX(0px); opacity: 1;}
   100% { transform: translateX(-30px) translateY(-30px) scale(1.5); opacity: 0; }
 }
 
